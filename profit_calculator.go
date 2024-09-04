@@ -20,7 +20,8 @@ func main() {
 	ebt := revenue - expenses
 	profit := ebt * (1 - taxRate/100)
 
-	fmt.Println("Earnings Before Tax:", ebt)
-	fmt.Println("Net Profit:", profit)
+	// Formatted Strings
+	formattedEbt := fmt.Sprintf("Earnings before tax:$%.2f\nNet Profit:$%.2f\n", ebt, profit)
+	fmt.Println(formattedEbt)
 
 }
